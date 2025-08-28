@@ -5,19 +5,6 @@
 
 html, body { overflow: hidden; }
 
-/* Linea di riferimento centrale */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 1px;
-  height: 100vh;
-  background: linear-gradient(to bottom, transparent 0%, #667eea 20%, #667eea 80%, transparent 100%);
-  z-index: 9999;
-  pointer-events: none;
-  opacity: 0.6;
-}
 
 :root { --nav-offset: 22vh; }
 
@@ -458,4 +445,5 @@ body::before {
     border-bottom: none;
   }
 }
+
 
