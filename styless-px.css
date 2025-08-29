@@ -1,0 +1,145 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+
+
+.nav-container {
+  background: #282828;
+  border-radius: 2.5vh;
+  padding: 1.2vh 2.4vw;
+  display: flex;
+  gap: 3.2vw;
+  box-shadow: 0 0.4vh 1.2vh rgba(0,0,0,0.3);
+}
+
+.nav-link {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.spline-container {
+  position: relative;
+  margin-left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.spline-badge-mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  background: #000;
+  pointer-events: auto;
+  z-index: 5;
+}
+
+.spline-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+
+spline-viewer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 0;
+}
+
+.zoom-viewport {
+  transform: translate(2vw, 2vh) scale(1.20);
+  transform-origin: center center;
+}
+
+@media (max-width: 768px) {
+  .zoom-viewport {
+    transform: translate(1vw, 1vh) scale(1.08);
+  }
+  
+  .nav-container {
+    border-radius: 1.5vh;
+    padding: 0.8vh 1.5vw;
+    gap: 2vw;
+    width: 90vw;
+    justify-content: space-between;
+  }
+  
+  .nav-link {
+    font-size: clamp(10px, 2.5vw, 14px);
+  }
+  
+  .title {
+    font-size: clamp(14px, 3.5vw, 24px);
+  }
+  
+  .subtitle {
+    font-size: clamp(8px, 2vw, 14px);
+  }
+
+  .spline-badge-mask {
+    height: 10vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    border-radius: 1vh;
+    padding: 0.6vh 1vw;
+    gap: 1.5vw;
+    width: 92vw;
+    justify-content: space-between;
+  }
+  
+  .nav-link {
+    font-size: clamp(8px, 3vw, 12px);
+  }
+  
+  .title {
+    font-size: clamp(12px, 4.5vw, 20px);
+  }
+  
+  .subtitle {
+    font-size: clamp(6px, 2.5vw, 12px);
+  }
+
+  .spline-badge-mask {
+    height: 9vh;
+  }
+  
+  /* Mostra il pulsante hamburger su mobile */
+  .hamburger {
+    display: block !important;
+  }
+}
