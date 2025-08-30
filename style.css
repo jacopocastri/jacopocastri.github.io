@@ -466,4 +466,223 @@ body {
 /* Keep tag colors as defined elsewhere */
 /* .skill-tag, .certification-tag, .tools-tag, .lowlevel-tag remain untouched */
 
+/* Stili per la sezione Projects */
+#projects {
+  padding-top: 14vh;
+}
+
+#projects .container {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  max-width: 100%;
+  margin: 0;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+#projects h2 {
+  margin-bottom: 0.5vh;
+  text-align: center;
+  color: #1f2937;
+}
+
+.projects-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 3vh 2.5vw;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  max-width: 60vw;
+  margin: 3vh auto 0 auto;
+  text-align: center;
+}
+
+.projects-content:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.projects-content p {
+  color: #1f2937;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0 0 2vh 0;
+  font-weight: 400;
+}
+
+.projects-content p:last-child {
+  margin-bottom: 0;
+}
+
+.projects-content p:first-child {
+  margin-top: 0;
+}
+
+/* Stili per il link GitHub */
+.github-link {
+  background: linear-gradient(135deg, #24292e 0%, #586069 100%);
+  color: white;
+  padding: 0.2vh 0.6vw;
+  border-radius: 8px;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0.2vw;
+}
+
+.github-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(36, 41, 46, 0.4);
+  background: linear-gradient(135deg, #1b1f23 0%, #444d56 100%);
+}
+
+/* Responsive design per Projects */
+@media (max-width: 1100px) {
+  .projects-content {
+    max-width: 80vw;
+    padding: 2.5vh 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-content {
+    max-width: 90vw;
+    padding: 2vh 1.5vw;
+  }
+  
+  .projects-content p {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+}
+
+/* Stili per la sezione Contacts */
+#contact {
+  padding-top: 14vh;
+}
+
+#contact .container {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  max-width: 100%;
+  margin: 0;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+#contact h2 {
+  margin-bottom: 0.5vh;
+  text-align: center;
+  color: #1f2937;
+}
+
+.contact-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 3vh 2.5vw;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  max-width: 60vw;
+  margin: 3vh auto 0 auto;
+  text-align: center;
+}
+
+.contact-content:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contact-content p {
+  color: #1f2937;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0 0 2vh 0;
+  font-weight: 400;
+}
+
+.contact-content p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-content p:first-child {
+  margin-top: 0;
+}
+
+.contact-links {
+  margin: 2vh 0;
+}
+
+.contact-links p {
+  margin: 1vh 0;
+}
+
+/* Stili per i link di contatto */
+.contact-link {
+  padding: 0.2vh 0.6vw;
+  border-radius: 8px;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0.2vw;
+}
+
+.email-link {
+  background: linear-gradient(135deg, #ea4335 0%, #d93025 100%);
+  color: white;
+}
+
+.email-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(234, 67, 53, 0.4);
+  background: linear-gradient(135deg, #d93025 0%, #b31412 100%);
+}
+
+.telegram-link {
+  background: linear-gradient(135deg, #0088cc 0%, #0077b3 100%);
+  color: white;
+}
+
+.telegram-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0, 136, 204, 0.4);
+  background: linear-gradient(135deg, #0077b3 0%, #005a8b 100%);
+}
+
+/* Responsive design per Contacts */
+@media (max-width: 1100px) {
+  .contact-content {
+    max-width: 80vw;
+    padding: 2.5vh 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-content {
+    max-width: 90vw;
+    padding: 2vh 1.5vw;
+  }
+  
+  .contact-content p {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  
+  .contact-link {
+    font-size: 0.85em;
+    padding: 0.3vh 0.8vw;
+  }
+}
+
 
